@@ -15,6 +15,7 @@ part4=99;
 
 var newlIP = part1+"."+part2+"."+part3+"."+part4;
 
-document.write(orginalIP);
-document.write("<br>");
-document.write(newlIP);
+document.getElementById("myP").innerHTML = newlIP;
+document.getElementById("myDIV").innerHTML = "How are you?";
+
+
