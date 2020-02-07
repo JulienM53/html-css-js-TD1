@@ -15,6 +15,14 @@ part4=99;
 
 var newlIP = part1+"."+part2+"."+part3+"."+part4;
 
-document.write("<div class='resultat'>" + newlIP + " " + orginalIP + "</div>");
+function lancer(){
+	var orginalIP = document.getElementById('adresse_ip').value; 
+	//console.log("<div class='resultat'>" + orginalIP + "</div>");
+	//document.write(orginalIP);
+	document.getElementById("resultat").innerHTML = orginalIP;
+
+}	
+
+
 
 
