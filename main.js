@@ -15,7 +15,6 @@ part4=99;
 
 var newlIP = part1+"."+part2+"."+part3+"."+part4;
 
-document.getElementById("myP").innerHTML = newlIP;
-document.getElementById("myDIV").innerHTML = "How are you?";
+document.write("<div class='resultat'>" + newlIP + " " + orginalIP + "</div>");
 
 

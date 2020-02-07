@@ -5,10 +5,11 @@ body{
     padding: 0;
 }
 
-#resultat{
+.resultat{
     font-family: 'Roboto', sans-serif;
     background-color: #c0392b;
     color: white;
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
