@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-</head>
-<body><br>
-    <form>
-        <label for="IP">IP:</label>
-        <input type="text" id="adresse_ip"/>
-        <button onclick="lancer()" type="button">Lancer (Sans le casser)</button>
-        <div id="resultat">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ipCalc Reaumur</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		<input type="text" id="myIP" value="192.168.10.10/24">
+		<button onclick="calcIP()">Send</button>
+<br >
+<br >
+		Adresse réseau: <div id="adrN"> .....</div><br >
+		Masque: <div id="mask"> .....</div><br >
+		1ère adresse: <div id="First"> .....</div><br >
+		Dernière Adresse: <div id="Last"> .....</div><br >
+		Adresse diffusion: <div id="Broadcast"> .....</div><br >
+		Nombre hôtes : <div id="Nb"> .....</div><br >
 
-        </div>
-    </form>
-
-</body>
+		<script src="script.js"></script>
+  </body>
 </html>

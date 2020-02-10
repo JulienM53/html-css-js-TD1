@@ -1,28 +1,46 @@
-  
-/*
-	Manipulation d'une adresse IP
-*/
+function calcIP() {
 
-var part1=192;
-var part2=168;
-var part3=100;
-var part4=25;
+	var elem = document.getElementById('myIP').value;
+	//console.log(elem);
+	var ip = elem.split('.');
+	//console.log(ip);
+	var cidr = ip[3].split('/');
+
+	ip[3]= cidr[0];
+	var CIDR=cidr[1];
+	console.log(ip);
+
+	var IP = parseInt(ip[0]) << 24 |parseInt(ip[1]) << 16 |parseInt(ip[2]) << 8 |parseInt(ip[3]); 
+
+	var mask = 0xFFFFFFFF << (32-CIDR);
+	toString(mask);
+	document.getElementById("mask").innerHTML =toString(mask);
+
+	var adrN = IP & mask
+	toString(adrN);
+	document.getElementById("adrN").innerHTML =toString(adrN);
+
+	var adrFirst = adrN +1;
+	toString(adrFirst);
+	document.getElementById("First").innerHTML =toString(adrFirst);
 
 
-var orginalIP = part1+"."+part2+"."+part3+"."+part4;
+	var adrDiff = adrN | ~mask;
+	toString(adrDiff);
+	document.getElementById("Broadcast").innerHTML =toString(adrDiff);
 
-part4=99;
+	var adrLast = adrDiff -1;
+	toString(adrLast);
+	document.getElementById("Last").innerHTML =toString(adrLast);
 
-var newlIP = part1+"."+part2+"."+part3+"."+part4;
+	var nb = Math.pow(2, (32-CIDR))-2;
+	document.getElementById("Nb").innerHTML =nb;
+}
 
-function lancer(){
-	var orginalIP = document.getElementById('adresse_ip').value; 
-	//console.log("<div class='resultat'>" + orginalIP + "</div>");
-	//document.write(orginalIP);
-	document.getElementById("resultat").innerHTML = orginalIP;
-
-}	
-
-
-
-
+function toString(data) {
+	var str = (data >> 24 &0xFF).toString()+"."+
+ (data >> 16 & 0xFF ).toString()+"." + (data >> 8 & 0xFF ).toString()+"." + (data & 0xFF).toString();
+ 
+//	console.log(str);
+	return str;
+}

@@ -1,16 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+#adrN{ display: inline; color :red}
+#mask{ display: inline;  color :red}
+#First{ display: inline;  color :red}
+#Last{ display: inline;  color :red}
+#Broadcast{ display: inline;  color :red}
+#Nb{ display: inline;  color :red}
 
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.resultat{
-    
-    background-color: #c0392b;
-    color: white;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
