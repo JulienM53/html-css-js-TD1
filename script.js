@@ -1,3 +1,4 @@
+$( "#box-resultat" ).hide();
 function calcIP() {
 
 	var elem = document.getElementById('myIP').value;
@@ -41,6 +42,8 @@ function calcIP() {
 	var nb = Math.pow(2, (32-CIDR))-2;
 	//document.getElementById("Nb").innerHTML =nb;
 	document.getElementById("Nb").setAttribute('value',nb);
+
+	$( "#box-resultat" ).show("slow");
 	
 }
 

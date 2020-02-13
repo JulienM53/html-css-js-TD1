@@ -1,14 +1,111 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-#adrN{ display: inline; color :red}
-#mask{ display: inline;  color :red}
-#First{ display: inline;  color :red}
-#Last{ display: inline;  color :red}
-#Broadcast{ display: inline;  color :red}
-#Nb{ display: inline;  color :red}
+#adrN{ display: inline; color :black}
+#mask{ display: inline;  color :black}
+#First{ display: inline;  color :black}
+#Last{ display: inline;  color :black}
+#Broadcast{ display: inline;  color :black}
+#Nb{ display: inline;  color :black}
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
+}
+
+.title{
+    width: 400px;
+    height: 40px;
+    font-family: Montserrat;
+    color:white;
+    background: #78E08F;
+    border-radius: 10px;
+}
+
+#myIP{
+    width: 200px;
+    height: 24px;
+    border: none;
+    text-align: center;
+    background: #C4C4C4;
+    border-radius: 10px;
+    
+
+}
+
+.valider{
+    transition: linear 0.5s;
+    width: 200px;
+    height: 24px;
+    border: none;
+    background: #78E08F;
+    border-radius: 10px;
+    color: white;
+}
+
+.valider:hover{
+    transition: linear 0.5s;
+    width: 200px;
+    height: 24px;
+    border: none;
+    background: #b8e994;
+    border-radius: 10px;
+    color: white;
+}
+
+#box-resultat{
+    width: 400px;
+    height: 400px;
+
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 10px;
+}
+
+.titre_resultat{
+    width: 400px;
+    height: 40px;
+    color: white;
+    background: #78E08F;
+    border-radius: 10px;
+}
+
+.label{
+    width: 200px;
+    height: 24px;
+    
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.right{
+    text-decoration: none;
+    padding-bottom: 10px;
+    width: 200px;
+    height: 15px;
+    border: none;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
     text-align: center;
 }
 
+.footer{
+    transition: linear 0.5s;
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    font-family: Montserrat;
+    color:white;
+    background: #78E08F;
+    border-radius: 10px;
+    
+}
+
+.footer:hover{
+    transition: linear 0.5s;
+    background: #b8e994;
+}
