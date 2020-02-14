@@ -6,13 +6,23 @@
     <title>ipCalc Reaumur</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
 	<div class="container" align="center">
 		<img class="banner" src="subnet3.png" alt="" width="730" height="354"><br>
 		<h1 class="title">Calculateur IP</h1><br>
 		<input type="text" id="myIP" value="192.168.10.10/24"><br><br>
-		<button onclick="calcIP()" class="valider">Send</button><br>
+		<button onclick="calcIP()" class="valider">Send</button><br><br>
+		<div class="option_plus">
+			<h1 class="titre_option">Plus d'option<i class="fa fa-plus" onclick="afficher_bouton()"></i><br></h1><br>
+			<h5>(Cliquez sur la croix pour afficher les options)</h5><br>
+			<div class="button_option">
+				<button class="valider" onclick="random()">Random</button><br><br>
+				<button class="valider" onclick="reset()">Reset</button><br><br>
+			</div>
+
+		</div>
 		<form action="" id="box-resultat">
 			<h1 class="titre_resultat">Résultat</h1>
 			<label for="" class="label">Adresse réseau:</label><br>

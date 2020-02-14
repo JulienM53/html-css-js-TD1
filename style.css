@@ -109,3 +109,48 @@ body{
     transition: linear 0.5s;
     background: #b8e994;
 }
+
+.titre_option{
+    margin-top: 5px;
+    font-size: 24px;
+    transition: linear 0.5s;
+    width: 400px;
+    height: 40px;
+    font-family: Montserrat;
+    color:white;
+    background: #78E08F;
+    border-radius: 10px;
+}
+
+.titre_option:hover{
+    transition: linear 0.5s;
+    width: 400px;
+    height: 40px;
+    font-size: 24px;
+    font-family: Montserrat;
+    color:white;
+    background: #b8e994;
+    border-radius: 10px;
+}
+
+.fa-plus{
+    font-size: 24px;
+    transition: 0.5s;
+    color: #212121;
+    margin-left: 20px;
+}
+
+
+.fa-plus:hover{
+    font-size: 24px;
+    transition: 0.5s;
+    color: #212121;
+    margin-left: 20px;
+    transform: rotate(45deg);
+}
+
+.option_plus{
+    border-radius: 10px;
+    background: #C4C4C4; 
+    width: 400px;
+}

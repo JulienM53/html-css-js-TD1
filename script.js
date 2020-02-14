@@ -1,4 +1,13 @@
 $( "#box-resultat" ).hide();
+$(".button_option").hide();
+
+function random(){
+	document.getElementById("myIP").setAttribute('value',Math.floor (Math.random () * 255) + "."+ Math.floor (Math.random () * 255) + "."+ Math.floor (Math.random () * 255) + "."+ Math.floor (Math.random () * 255) + "/"+ Math.floor (Math.random () * 32));
+}
+
+function reset(){
+	document.getElementById("myIP").setAttribute('value'," ");
+}
 function calcIP() {
 
 	var elem = document.getElementById('myIP').value;
@@ -17,6 +26,7 @@ function calcIP() {
 	toString(mask);
 	//document.getElementById("mask").innerHTML =toString(mask);
 	document.getElementById("mask").setAttribute('value',toString(mask));
+	
 
 	var adrN = IP & mask
 	toString(adrN);
@@ -54,3 +64,8 @@ function toString(data) {
 //	console.log(str);
 	return str;
 }
+
+function afficher_bouton(){
+	$(".button_option").toggle("slow");
+}
+
